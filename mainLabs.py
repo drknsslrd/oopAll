@@ -51,19 +51,20 @@ print()
 
 
 # 3-2
-x = float(input())
-y = float(input())
-z = float(input())
-print(x, y, z)
+old_x = float(input())
+old_y = float(input())
+old_z = float(input())
+print(old_x, old_y, old_z)
 
-if (x + y + z) < (x**2 + y**2 + z**2):
-    x = min(y, z)
-    y = min(x, z)
-    z = min(x, y)
+if (old_x + old_y + old_z) < (old_x**2 + old_y**2 + old_z**2):
+    x = min(old_y, old_z)
+    y = min(old_x, old_z)
+    z = min(old_x, old_y)
 else:
-    x = max(y, z)
-    y = max(x, z)
-    z = max(x, y)
+    x = max(old_y, old_z)
+    y = max(old_x, old_z)
+    z = max(old_x, old_y)
+
 print(x, y, z, '\n')
 
 
