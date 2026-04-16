@@ -133,6 +133,18 @@ print(quantityMoreC)
 print(result, '\n')
 
 
+# 5-2
+text = "AbbCC"
+result = ""
+
+for i in text:
+    if i.islower():
+        result += i.upper()
+    elif i.isupper():
+        result += i.lower()
+        
+print(result)
+
 
 # 6-1
 matrix = [
